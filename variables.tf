@@ -13,7 +13,7 @@ variable "cluster_version" {
 variable "ami_release_version" {
   description = "Default EKS AMI release version for node groups"
   type        = string
-  default     = "1.29.0-20240129"
+  default     = "bottlerocket-aws-k8s-1.29-aarch64-v1.20.5-a3e8bda1"
 }
 
 variable "vpc_cidr" {

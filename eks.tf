@@ -34,7 +34,9 @@ module "eks" {
 
   eks_managed_node_groups = {
     default = {
-      instance_types       = ["m5.large"]
+      ami_type             = "BOTTLEROCKET_ARM_64"
+      instance_types       = ["m7g.medium"]
+      capacity_type        = "SPOT"
       force_update_version = true
       release_version      = var.ami_release_version
 
